@@ -1,1 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />    
+    <title>Miguel's Cybersecurity Portfolio</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'none'; style-src 'self' 'unsafe-inline';" />    
+    <style>        
+        body {            
+            font-family: Arial, sans-serif;            
+            margin: 0;            
+            padding: 0;            
+            background: #f5f7fa;            
+            color: #333;        }        
+        header {            
+            background: #004080;            
+            color: white;            
+            padding: 20px;            
+            text-align: center;        }        
+        nav {            
+            margin-top: 10px;        }        
+        nav a {            
+            color: white;            
+            margin: 0 15px;            
+            text-decoration: none;            
+            font-weight: bold;        }        
+        nav a:hover {            
+            text-decoration: underline;        }        
+        section {            
+            max-width: 900px;            
+            margin: 30px auto;            
+            padding: 0 15px;        }        
+        h2 {            
+            border-bottom: 2px solid #004080;            
+            padding-bottom: 5px;            
+            margin-bottom: 20px;        }        
+        .project {            
+            background: white;            
+            padding: 20px;            
+            margin-bottom: 20px;            
+            border-radius: 8px;            
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);            
+        }        
+        .hub-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .hub-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+            flex: 1 1 calc(50% - 10px);
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        footer {            
+            text-align: center;            
+            padding: 15px;            
+            background: #004080;            
+            color: white;            
+            margin-top: 40px;        }        
+        .cta-box {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .btn {
+            background-color: #004080;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background-color: #003366;
+        }
+        .disclosure {
+            font-size: 0.8rem;
+            color: #666;
+            border-top: 1px dashed #ccc;
+            margin-top: 25px;
+            padding-top: 15px;
+        }
+        @media (max-width: 768px) {            
+            .hub-card {
+                flex: 1 1 100%;
+            }
+            nav a {                
+                display: block;                
+                margin: 5px 0;            
+            }
+        }    
+    </style>
+</head>
+<body>    
+    <div id="top-of-page"></div>    
+    
+    <header>
+        <h1>Cybersecurity portfolio/personal website</h1>
+        <nav>            
+            <a href="index.html">Back to main page</a>        
+        </nav>
+    </header>
 
+    <section id="tcm-hub">        
+        <h2>(~$ tcm_security_hub)</h2>        
+        
+        <!-- Intro & Social Proof Card -->
+        <div class="project">
+            <div style="text-align: center; margin-bottom: 15px;">                    
+                <img src="TCM-Security-final-small-800x400.png" alt="TCM_logo" style="width: 35%; height: auto;">
+            </div>        
+            <h3>Why I recommend TCM Security</h3>
+            <p>They are well-known in the industry for their affordability, real-world practicality, and hands-on approach to learning. Best of all, there are no proctors or invasive monitoring software installed on your device when taking the exam. Every exam certification also includes a free retake voucher, giving you peace of mind. Combine all of that with their incredibly supportive <a href="https://discord.com/invite/tcm" target="_blank" rel="noopener noreferrer">Discord community</a>, which I highly recommend you join, and it is easily one of the best investments you can make in your cybersecurity journey.</p>
+        </div>
+
+        <!-- Two-Column Grid for Core Offerings -->
+        <div class="hub-grid">
+            <!-- Card 1: Learning Paths -->
+            <div class="hub-card">
+                <div>
+                    <h3>🚀 All-In-One Learning Paths</h3>
+                    <p>Looking for a complete roadmap? These combine intensive training materials with multiple industry-recognized certification vouchers (plus free retakes) to take you from zero to job-ready.</p>
+                    <ul>
+                        <li><a href="https://certifications.tcm-sec.com/security-operations-learning-path/?ref=348" target="_blank" rel="noopener noreferrer">Security Operations Path</a></li>
+                        <li><a href="https://certifications.tcm-sec.com/enterprise-penetration-testing-learning-path/?ref=348" target="_blank" rel="noopener noreferrer">Enterprise Pentesting Path</a></li>
+                        <li><a href="https://certifications.tcm-sec.com/exploitation-analysis-learning-path/?ref=348" target="_blank" rel="noopener noreferrer">Exploitation Analysis Path</a></li>
+                    </ul>
+                </div>
+            </div>			
+ 
+            <!-- Card 2: Live Training -->
+            <div class="hub-card">
+                <div>
+                    <h3>🏋️‍♂️ Instructor-Led Live Training</h3>
+                    <p>Prefer real-time, interactive learning? TCM Security hosts regular, structured live training cohorts covering advanced offensive and defensive techniques taught by industry experts.</p>
+                    <p>Great for individuals who thrive in a classroom environment, ask questions live, and want immersive collaborative training sessions.</p>
+                </div>
+                <div class="cta-box" style="margin-top: 35px;">
+                    <a href="https://certifications.tcm-sec.com/live-training/?ref=348" class="btn" target="_blank" rel="noopener noreferrer">View Live Training Schedule</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Full-Width Card for Individual Certifications -->
+        <div class="project">
+            <h3>🛡️ Standalone Certifications ⚔️</h3>
+            <p>
+                If you want to focus on a specific technical discipline rather than an entire multi-course track, you can explore their top-rated standalone offerings:
+            </p>
+            <ul>
+                <li><strong>Offensive Track:</strong> Standouts include the <a href="https://certifications.tcm-sec.com/PNPT/?ref=348" target="_blank" rel="noopener noreferrer">Practical Network Penetration Tester (PNPT)</a> and <a href="https://certifications.tcm-sec.com/PJPT/?ref=348" target="_blank" rel="noopener noreferrer">Practical Junior Penetration Tester (PJPT)</a>. Check out the <a href="https://certifications.tcm-sec.com?ref=348" target="_blank" rel="noopener noreferrer">full offensive catalog</a>.</li><br>
+                <li><strong>Defensive Track:</strong> Standouts include the <a href="https://certifications.tcm-sec.com/PSAA/?ref=348" target="_blank" rel="noopener noreferrer">Practical SOC Analyst Associate (PSAA)</a> and <a href="https://certifications.tcm-sec.com/PSAP/?ref=348" target="_blank" rel="noopener noreferrer">Practical SOC Analyst Professional (PSAP)</a>. Explore the <a href="https://certifications.tcm-sec.com?ref=348" target="_blank" rel="noopener noreferrer">complete defensive catalog</a>.</li>
+            </ul>
+
+        </div>
+    </section>
+
+<footer>        
+    <p style="font-size: 0.85rem; color: #d0d0d0; margin-bottom: 8px;">
+        <em>Disclaimer: Purchasing through these links supports my work via a small commission at absolutely zero extra cost to you. Thank you so much for the support!</em>
+    </p>
+    <p>© 2026 Miguel. All rights reserved.</p>    
+</footer>
+</body>
+</html>
